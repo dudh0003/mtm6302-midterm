@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
+    <!-- STYLE.CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<!-- MADLIB navbar -->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="javascript:void(0)">
+        Madlib
+    </a>
+</nav>
+
+
+<div class="container">
+    <div class="row">
+       <div class="col-sm-12 col-xs-12 col-md-auto">
+           <!-- Create story -->
+           <div id="story" class="card" style="width: 28rem;padding: 15px;">
+               <div class="card-header text-danger">
+                   Choose a story
+               </div>
+           </div>
+           <div id="input" class="card" style="width: 28rem;padding: 15px;">
+               <div class="card-header text-danger">
+                   Provide the following words
+               </div>
+               <form onsubmit="return validate(this);">
+                   <div class="card-body" id="body"></div>
+                   <div class="card-footer">
+                       <button class="btn btn-success" id="read" type="submit"> Read story </button>
+                   </div>
+               </form>
+           </div>
+       </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" > </script>
+<!-- JS script -->
+<script src="stories.js" type="text/javascript" ></script>
+<script src="script.js" type="text/javascript" ></script>
+</body>
+</html>
